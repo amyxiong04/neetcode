@@ -27,9 +27,15 @@ class LinkedList:
                 self.tail = curr
             curr.next = curr.next.next
 
-    def print(self):
+    def display(self):
         curr = self.head.next
         while curr:
             print(curr.val, " -> ", end="")
             curr = curr.next
         print()
+
+list = LinkedList()
+list.insertEnd(1)
+list.insertEnd(2)
+list.insertEnd(3)
+list.display()
